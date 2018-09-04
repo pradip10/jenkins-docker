@@ -2,14 +2,14 @@ def workspace;
 
 node
 {
-  stage('install docker')
+  stage('stage1')
 {
-echo "stage 1"
+    echo "This is stage1"
 }
 
-stage('Build Image')
+stage('Checkout')
 {
-sudo docker build . -t ubuntu-with-jenkins
+    echo "This is stage2. Git checkout !!!"
 }
 
 stage('stage3')
