@@ -18,7 +18,7 @@ stage('Checkout')
 
 stage('list image(s)')
 {
-    sh 'docker images | grep from_jenkins'
+    sh 'sudo docker images | grep from_jenkins'
 }
 
 }
