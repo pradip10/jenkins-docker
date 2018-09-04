@@ -4,13 +4,12 @@ node
 {
   stage('stage1')
 {
-sh 'sudo apt-get update'
-sh 'sudo apt-get install docker-ce'
+sh 'pwd'
 }
 
 stage('Checkout')
 {
-    sh 'hostname'
+    sh 'docker build . -t from_jenkins'
 }
 
 stage('stage3')
