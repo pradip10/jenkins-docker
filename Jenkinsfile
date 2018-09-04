@@ -13,7 +13,7 @@ stage('Checkout')
     sh 'pwd'
     sh 'git pull https://github.com/pradip10/jenkins-docker.git'
     sh 'cat Dockerfile'
-    sh 'docker build . -t from_jenkins'
+    sh 'sudo docker build . -t from_jenkins'
 }
 
 stage('stage3')
