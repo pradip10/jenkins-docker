@@ -9,7 +9,7 @@ node
 
 stage('Checkout')
 {
-    echo "This is stage2. Git checkout !!!"
+    sh 'hostname'
 }
 
 stage('stage3')
