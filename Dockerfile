@@ -2,12 +2,11 @@ FROM ubuntu
 
 RUN apt-get update
 RUN apt-get install -y build-essential
-RUN apt-get update && apt-get install --assume-yes apt-utils
+RUN apt-get install --assume-yes apt-utils
 RUN apt-get -y install build-essential
 RUN apt-get -y install vim curl
 RUN apt-get install libexpat1-dev
 
-RUN apt-get install -y tomcat7
 
 RUN perl -MCPAN -e 'install Crypt::Blowfish'
 RUN perl -MCPAN -e 'install Crypt::CBC'
