@@ -16,9 +16,9 @@ stage('Checkout')
     sh 'sudo docker build . -t from_jenkins'
 }
 
-stage('stage3')
+stage('list image(s)')
 {
-    echo "This is stage3"
+    sh 'docker images | grep from_jenkins'
 }
 
 }
