@@ -4,7 +4,7 @@ node
 {
   stage('stage1')
 {
-sh 'pwd'
+sh 'id'
 }
 
 stage('Checkout')
@@ -12,7 +12,7 @@ stage('Checkout')
     sh 'git init .'
     sh 'pwd'
     sh 'git pull https://github.com/pradip10/jenkins-docker.git'
-    sh 'ls Dockerfile'
+    sh 'cat Dockerfile'
     sh 'docker build . -t from_jenkins'
 }
 
