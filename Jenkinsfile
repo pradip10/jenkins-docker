@@ -23,11 +23,12 @@ stage('list image')
 
 stage('input')
 {
-    def doesJavaRock = input(message: 'Do you like Java?', ok: 'Yes', 
+    def doesDockerRock = input(message: 'Do you like Docker?', ok: 'Yes', 'No', 
                         parameters: [booleanParam(defaultValue: true, 
-                        description: 'If you like Java, just push the button',name: 'Yes?')])
+                        description: 'If you like Docker, just push the button',name: 'Yes?')])
 
-echo "Java rocks?:" + doesJavaRock
+echo "Docker rocks?:" + doesDockerRock
+
 }
   
 }
