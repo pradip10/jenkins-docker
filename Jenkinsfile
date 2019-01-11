@@ -23,7 +23,7 @@ stage('list image')
 
 stage('input')
 {
-    def doesDockerRock = input(message: 'Do you like Docker?', ok: 'Yes', 'No', 
+    def doesDockerRock = input(message: 'Do you like Docker?', ok: 'Yes', 
                         parameters: [booleanParam(defaultValue: true, 
                         description: 'If you like Docker, just push the button',name: 'Yes?')])
 
